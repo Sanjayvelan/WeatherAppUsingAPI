@@ -39,19 +39,19 @@ async function getWeather(city){
 
     switch(weather_data.weather[0].main || weather_data.weather[1].main){
         case 'Clouds':
-            weatherImg.src = "images/cloud.png";
+            weatherImg.src = "cloud.png";
             break;
         case 'Rain':
-            weatherImg.src = "images/rain.png";
+            weatherImg.src = "rain.png";
             break;
         case 'Mist':
-            weatherImg.src = "images/mist.png";
+            weatherImg.src = "mist.png";
             break;
         case 'Snow':
-            weatherImg.src = "images/snow.png";
+            weatherImg.src = "snow.png";
             break;    
         case 'Clear':
-            weatherImg.src = "images/clear.png";
+            weatherImg.src = "clear.png";
             break;    
     }
     not_found.style.display = "none";
